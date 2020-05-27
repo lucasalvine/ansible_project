@@ -1,0 +1,5 @@
+sudo ansable __grupo__ -u vagrant -i __arquivo de host__ -m shell(o que será executado) -a ...
+
+ansable -vvvv wordpress -u vagrant --private-key .vagrant/machines/wordpress/virtualbox/private_key -i hosts -m shell 'echo Hello World'
+
+o comando -vvvv é utilizado para depurar o que está acontecendo dentro da maquina virtual, se não deseja fazer isso, é só retirar essa parte do código.
