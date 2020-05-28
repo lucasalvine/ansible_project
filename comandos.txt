@@ -7,3 +7,5 @@ o comando -vvvv é utilizado para depurar o que está acontecendo dentro da maqu
 ansible-playbook provisioning.yml -u vagrant -i hosts --private-key .vagrant/machines/wordpress/virtualbox/private_key
 
 ansible-playbook provisioning -i hosts
+
+ansible-playbook provisioning -i hosts --extra-vars 'wp_db_name=wordpress_db'
