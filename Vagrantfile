@@ -10,4 +10,8 @@ Vagrant.configure("2") do |config|
         m.vm.network "private_network", ip: "172.17.177.41"
     end
 
+     config.vm.define "mysql" do |m|
+        m.vm.network "private_network", ip: "172.17.177.43"
+    end
+
 end
